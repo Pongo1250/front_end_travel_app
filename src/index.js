@@ -1,16 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import "./styles.css";
+const title = 'My Minimal React Webpack Babel Setup';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
-  );
-}
+ReactDOM.render(
+  <div>{title}</div>,
+  document.getElementById('app')
+);
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+module.hot.accept();
